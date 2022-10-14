@@ -56,6 +56,12 @@ sudo raspi-config
 #Interface Options -> Legacy Camera -> NO
 ```
 
+Increase microphone volume to 100
+
+```sh
+alsamixer -c 1
+```
+
 Start picam
 
 ```sh
@@ -273,9 +279,15 @@ sudo systemctl enable youtube
 
 ## Links
 
-- [github.com/iizukanao/picam](https://github.com/iizukanao/picam)
-- [NGINX-based Media Streaming Server](https://github.com/arut/nginx-rtmp-module)
-- [Five Ways To Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
-- [How to see full log from systemctl status service?](https://unix.stackexchange.com/questions/225401/how-to-see-full-log-from-systemctl-status-service/225407#225407)
-- [NGINX systemd service file](https://www.nginx.com/resources/wiki/start/topics/examples/systemd/)
-- [nginx.service: Can't open PID file /run/nginx](https://askubuntu.com/questions/1113319/nginx-service-cant-open-pid-file-run-nginx/1113509#1113509)
+- Github
+  - [github.com/iizukanao/picam](https://github.com/iizukanao/picam)
+  - [NGINX-based Media Streaming Server](https://github.com/arut/nginx-rtmp-module)
+- Linux
+  - [Five Ways To Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
+  - [How to see full log from systemctl status service?](https://unix.stackexchange.com/questions/225401/how-to-see-full-log-from-systemctl-status-service/225407#225407)
+- NGINX
+  - [NGINX systemd service file](https://www.nginx.com/resources/wiki/start/topics/examples/systemd/)
+  - [nginx.service: Can't open PID file /run/nginx](https://askubuntu.com/questions/1113319/nginx-service-cant-open-pid-file-run-nginx/1113509#1113509)
+- Audio
+  - [Reducing sound noise when recording with Pi](https://raspberrypi.stackexchange.com/questions/111426/reducing-sound-noise-when-recording-with-pi)
+  - [Connect, Configure and Test USB Microphone and Speaker with Raspberry Pi](https://iotbytes.wordpress.com/connect-configure-and-test-usb-microphone-and-speaker-with-raspberry-pi/)
