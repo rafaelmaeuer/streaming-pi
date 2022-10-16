@@ -196,16 +196,20 @@ Add following before `exit 0`:
 
 ### PiCam
 
-Create following script from: [scrips/picam.sh](./scrips/picam.sh)
+Create following scripts from: [scrips/picam.sh](./scrips/picam.sh), [scrips/restart.sh](./scrips/restart.sh) and [scrips/shutdown.sh](./scrips/shutdown.sh)
 
 ```sh
 nano ~/picam.sh
+nano ~/restart.sh
+nano ~/shutdown.sh
 ```
 
-Make it executable
+Make them executable
 
 ```sh
 chmod +x ~/picam.sh
+chmod +x ~/restart.sh
+chmod +x ~/shutdown.sh
 ```
 
 Install netcat to wait for nginx
@@ -285,6 +289,7 @@ sudo systemctl enable youtube
 - Linux
   - [Five Ways To Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
   - [How to see full log from systemctl status service?](https://unix.stackexchange.com/questions/225401/how-to-see-full-log-from-systemctl-status-service/225407#225407)
+  - [The "proper" way to test if a service is running in a script](https://unix.stackexchange.com/questions/396630/the-proper-way-to-test-if-a-service-is-running-in-a-script/396638#396638)
 - NGINX
   - [NGINX systemd service file](https://www.nginx.com/resources/wiki/start/topics/examples/systemd/)
   - [nginx.service: Can't open PID file /run/nginx](https://askubuntu.com/questions/1113319/nginx-service-cant-open-pid-file-run-nginx/1113509#1113509)
